@@ -1,3 +1,11 @@
+# Este programa realiza operações matemáticas básicas entre dois números fornecidos pelo usuário.
+# Ele solicita dois valores inteiros e, em seguida, calcula:
+# - A soma
+# - A subtração
+# - A multiplicação
+# - A divisão (com verificação de divisão por zero)
+# A divisão é exibida com duas casas decimais, e se o segundo número for zero, o programa informa que não é possível dividir.
+
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite mais um número: '))
 
