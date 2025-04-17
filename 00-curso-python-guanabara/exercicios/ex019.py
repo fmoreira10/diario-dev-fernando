@@ -1,3 +1,9 @@
+# 🔢 Como obter a parte inteira de um número decimal em Python?
+#
+# Este programa recebe três números decimais inseridos pelo usuário
+# e utiliza a função `trunc()` da biblioteca `math` para mostrar apenas a parte inteira de cada número.
+# Um ótimo exercício para compreender manipulação de números reais e funções matemáticas em Python.
+
 import math
 num = float(input('Digite o primeiro um número: '))
 print('O número digitado foi {} tem a parte inteira {}.'.format(num, math.trunc(num)))

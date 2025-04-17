@@ -1,3 +1,11 @@
+# 🎵 Como tocar um arquivo de áudio (MP3) usando Pygame?
+#
+# Este programa utiliza a biblioteca Pygame para carregar e reproduzir
+# um arquivo de música em formato MP3. A função `pygame.mixer.music.load()`
+# carrega o áudio, e `pygame.mixer.music.play()` inicia a reprodução.
+# O `try/except` é usado para capturar erros no carregamento.
+# O loop `while` mantém o programa em execução enquanto a música está tocando.
+
 import pygame
 
 pygame.init()

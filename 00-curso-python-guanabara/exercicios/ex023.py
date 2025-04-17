@@ -1,3 +1,10 @@
+# 🔀 Como sortear aleatoriamente a ordem de apresentação dos alunos?
+#
+# Este programa pede o nome de quatro alunos e, em seguida, sorteia
+# uma ordem aleatória de apresentação usando a função `shuffle()`
+# da biblioteca `random`. Um exemplo simples e divertido de como manipular
+# listas e gerar resultados diferentes a cada execução.
+
 from random import shuffle
 n1 = str(input('Primeiro aluno: '))
 n2 = str(input('Segundo aluno: '))
