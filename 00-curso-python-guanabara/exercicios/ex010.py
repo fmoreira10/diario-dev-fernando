@@ -1,3 +1,10 @@
+# 📏 Como converter metros em outras unidades de medida?
+#
+# Este programa em Python solicita ao usuário uma distância em metros
+# e realiza a conversão para outras unidades do sistema métrico:
+# quilômetros, hectômetros, decâmetros, decímetros, centímetros e milímetros.
+# Uma ótima forma de treinar operações matemáticas básicas e formatação de saída.
+
 medida = float(input('Uma distância em netros: '))
 km = medida / 1000
 hm = medida / 100

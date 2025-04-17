@@ -1,3 +1,10 @@
+# 🧮 Como exibir a tabuada de um número usando Python?
+#
+# Este programa solicita ao usuário que digite um número inteiro
+# e exibe a tabuada desse número de 1 a 10. Além de ser um ótimo
+# exercício para iniciantes, também reforça o uso de formatação de strings
+# com alinhamento e operadores aritméticos.
+
 num = int(input('Digite um número para ver sua tabuada: '))
 print('-'*12)
 print('{} x {:2} = {}'.format(num, 1, num*1))
