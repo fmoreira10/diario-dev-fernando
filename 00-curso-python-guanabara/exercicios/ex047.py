@@ -32,6 +32,3 @@ while opção != 5:
     print('=-='*10)
 sleep(2)
 print('Fim do programa! Volte sempre!')
-
-
-

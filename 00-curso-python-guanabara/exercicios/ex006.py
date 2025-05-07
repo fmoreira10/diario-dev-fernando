@@ -11,5 +11,5 @@ d = n1 / n2
 e = n1 ** n2
 r = n1 % n2
 
-print('A soma é: {}\nA subtração é: {}\nA multiplicação é: {}\nA divisão é: {:.2f}\nA exponenciação é: {}\nO resto da divisão é: {}'.format(s, sub, m, d, e, r))
+print(f'A soma é: {s}\nA subtração é: {sub}\nA multiplicação é: {m}\nA divisão é: {d:.2f}\nA exponenciação é: {e}\nO resto da divisão é: {r}')
 

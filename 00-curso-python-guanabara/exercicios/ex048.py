@@ -1,4 +1,3 @@
-# Faça um programa que leia um número qualquer e mostre o seu fatorial.
 
 # Primeira forma de resolver
 from math import factorial

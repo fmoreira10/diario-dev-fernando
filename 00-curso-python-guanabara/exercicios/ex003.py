@@ -24,9 +24,3 @@ print('A soma entre {} e {} vale {}'.format(n1, n2, s))
 print('A subtração vale:', sub)
 print('A multiplicação vale:', mult)
 print('A divisão vale:', div)  # Exibe a divisão ou mensagem de erro
-
-
-
-
-
-

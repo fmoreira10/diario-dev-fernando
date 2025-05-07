@@ -4,5 +4,3 @@ if nome == 'Fernando':
 else:
     print('Você não é gostoso!!!')
 print('Bom dia, {}!'.format(nome))
-
-

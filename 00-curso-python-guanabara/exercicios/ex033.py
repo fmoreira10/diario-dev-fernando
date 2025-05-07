@@ -7,5 +7,3 @@ if m <= 5:
 else:
     print('Aluno está aprovado! PARABÉNS!')
 print('---FIM---')
-
-

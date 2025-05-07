@@ -4,6 +4,6 @@
 # e calcula o valor com um aumento de 15%.
 # Uma aplicação direta de porcentagens e formatação de saída.
 
-salário = float(input('Qual é o salário do Funcionário? R$'))
+salário = float(input('Qual é o salário do funcionário? R$ '))
 novo = salário + (salário * 15 / 100)
-print('Um funcionário que ganhava R${}, com 15% de aumento, passa a receber R${:.2f}.'.format(salário,novo))
+print(f'Um funcionário que ganhava R${salário:.2f}, com 15% de aumento, passa a receber R${novo:.2f}.')

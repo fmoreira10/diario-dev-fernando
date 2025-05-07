@@ -9,5 +9,3 @@ if n3<n1 and n3<n2:
     menor = n3
 #Verificando o maior número
 maior = n1
-
-

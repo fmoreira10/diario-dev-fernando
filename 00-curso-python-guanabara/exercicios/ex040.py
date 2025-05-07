@@ -15,5 +15,3 @@ if n2>n1 and n2>n3:
 if n3>n1 and n3>n2:
     maior = n3
 print('O maior valor digitado foi {}'.format(maior))
-
-
