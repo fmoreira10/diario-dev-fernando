@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter, A4
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, image, Paragraph, Spacer
+from reportlab.platypus import SimpleDocTemplate, Image, Paragraph, Spacer
 import webbrowser
 
 
@@ -15,7 +15,7 @@ class Relatorios():
     def printCliente(self):
         webbrowser.open('clientee.pdf')
     def geraRelatCliente(self):
-        self.c = canvas.canvas('cliente.pdf')
+        self.c = canvas.Canvasanvas('cliente.pdf')
 
         self.codigoReal = self.codigo_entry.get()
         self.nomeReal = self.nome_entry.get()
