@@ -13,16 +13,46 @@ root = Tk()
 
 class Relatorios():
     def printCliente(self):
-        webbrowser.open('clientee.pdf')
+        webbrowser.open('cliente.pdf')
     def geraRelatCliente(self):
-        self.c = canvas.Canvasanvas('cliente.pdf')
+        self.c = canvas.Canvas('cliente.pdf')
+
 
         self.codigoReal = self.codigo_entry.get()
         self.nomeReal = self.nome_entry.get()
         self.telefoneReal = self.fone_entry.get()
         self.cidadeReal = self.cidade_entry.get()
         self.c.setFont('Helvetica', 24)
-        self.c.drawString(100, 750, 'Relatório de Clientes')
+        self.c.drawString(100, 740, 'Ficha do Clientes')
+
+        self.c.setFont('Helvetica', 15)
+        self.c.drawString(100, 700, 'Código: {}'.format(self.codigoReal))
+        self.c.drawString(100, 680, 'Nome: {}'.format(self.nomeReal))
+        self.c.drawString(100, 660, 'Telefone: {}'.format(self.telefoneReal))
+        self.c.drawString(100, 640, 'Cidade: {}'.format(self.cidadeReal))
+        self.c.setFont('Helvetica', 13)
+        self.c.drawString(100, 620, 'Relatório gerado com sucesso!')
+        self.c.setFont('Helvetica', 11)
+        self.c.drawString(100, 600, 'Sistema de Cadastro de Clientes')
+        self.c.drawString(100, 580, 'Desenvolvido por: Fernando Alvarenga Moreira')
+        self.c.drawString(100, 560, 'Data: 15-05-2025'.format(self.c.getPageNumber()))
+        self.c.setFont('Helvetica', 10)
+        self.c.drawString(100, 540, 'Endereço: Rua Expedicionário Mário Miguel, 375')
+        self.c.drawString(100, 520, 'Bairro: São Luis')
+        self.c.drawString(100, 500, 'Cidade: Campo Belo')
+        self.c.drawString(100, 480, 'Telefone: (19) 99855-8335')
+        self.c.drawString(100, 460, 'E-mail: fernandinhoalvarenga@gmail.com')
+
+        self.c.rect(50, 450, 400, 270, fill=False, stroke=True)
+           
+
+
+
+
+        self.c.showPage()
+        self.c.save()
+        self.printCliente()
+
 
 
 class Funcs:
@@ -96,7 +126,8 @@ class Funcs:
         self.desconecta_bd()
         self.select_lista()
 
-class Application(Funcs):
+class Application(Funcs, Relatorios):
+    
     def __init__(self):
         self.root = root
         self.tela()
@@ -196,5 +227,14 @@ class Application(Funcs):
         self.menu_bar.add_cascade(label='Opções', menu=self.options_menu)
         self.options_menu.add_command(label='Sair', command=self.root.quit)
         self.options_menu.add_command(label='Limpa Cliente', command=self.limpa_tela)
-        self.menu_bar.add_cascade(label='Sobre', menu=self.select_lista)
+        sobre_menu = Menu(self.menu_bar, tearoff=0)
+        sobre_menu.add_command(label='Sobre o Sistema', command=lambda: messagebox.showinfo("Sobre", "Sistema de Cadastro de Clientes v1.0"))
+        self.menu_bar.add_cascade(label='Sobre', menu=sobre_menu)
+
+
+        filemenu2 = Menu(self.menu_bar, tearoff=0)
+        self.menu_bar.add_cascade(label='Relatórios', menu=filemenu2)
+        filemenu2.add_command(label='Ficha do Cliente', command=self.geraRelatCliente)
+        filemenu2.add_command(label='Sair', command=self.root.quit)
+ 
 Application()
