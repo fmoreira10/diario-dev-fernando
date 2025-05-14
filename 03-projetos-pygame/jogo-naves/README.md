@@ -1,4 +1,4 @@
-# 🕹️ [Nome do Jogo] - Desenvolvido com Pygame
+# 🕹️ Jogo-naves - Desenvolvido com Pygame
 
 Este projeto faz parte da minha jornada de aprendizado em desenvolvimento de jogos usando **Python** e a biblioteca **Pygame**.  
 O jogo [descreva brevemente o objetivo, exemplo: "é uma simulação de batalha entre tanques onde dois jogadores competem até que um vença"].
