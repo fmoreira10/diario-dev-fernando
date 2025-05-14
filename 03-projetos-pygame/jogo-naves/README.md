@@ -5,7 +5,8 @@ O jogo [descreva brevemente o objetivo, exemplo: "é uma simulação de batalha 
 
 ## 🎮 Demonstração
 
-(Se quiser, insira aqui uma captura de tela ou gif do jogo em execução)
+![Captura de tela 2025-05-14 151153](https://github.com/user-attachments/assets/97f82375-9068-428d-bc4a-2060a1c2a623)
+
 
 ## 🚀 Funcionalidades
 
